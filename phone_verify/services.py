@@ -38,9 +38,9 @@ class PhoneVerificationService(object):
 
         :param number: the phone number of recipient.
         """
-        message = self._generate_message(security_code)
-
-        self.backend.send_sms(number, message)
+        # message = self._generate_message(security_code)
+        # self.backend.send_sms(number, message)
+        pass
 
     def _generate_message(self, security_code):
         return self.verification_message.format(
